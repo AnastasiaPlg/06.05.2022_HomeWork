@@ -11,6 +11,7 @@ public class Task1 {
 
         System.out.println("Задание 1а: " + taskA(priceA, priceB));
         System.out.println("Задание 1б: " + taskB(priceA, priceB));
+        System.out.println("Задание 1в: " + taskC(priceA, priceB));
 
     }
 
@@ -30,6 +31,16 @@ public class Task1 {
         double saleA = 0.5;
         int coinsFinalPriceProductA = (int)((1 - saleA) * coinsNumberProductA);
         int coinsFinalCost = 7 * coinsFinalPriceProductA + 1 * coinsNumberProductB;
+        double finalPrice = (double)coinsFinalCost / 100;
+        return finalPrice;
+    }
+
+    public static double taskC (double xx, double yy) {
+        int coinsNumberProductA = (int) (xx * 100);
+        int coinsNumberProductB = (int) (yy * 100);
+        double saleA = 0.1;
+        int coinsFinalPriceProductA = (int)((1 - saleA) * coinsNumberProductA);
+        int coinsFinalCost = 2 * coinsFinalPriceProductA + 3 * coinsNumberProductB;
         double finalPrice = (double)coinsFinalCost / 100;
         return finalPrice;
     }
