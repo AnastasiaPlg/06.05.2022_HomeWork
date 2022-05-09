@@ -6,11 +6,11 @@ public class Task11 {
 
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Введите число в десятичной системе исчисления:");
+            System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РІ РґРµСЃСЏС‚РёС‡РЅРѕР№ СЃРёСЃС‚РµРјРµ РёСЃС‡РёСЃР»РµРЅРёСЏ:");
             int decimalNumber = scanner.nextInt();
-            System.out.println("Укажите желаемую систему исчисления для перевода:");
+            System.out.println("РЈРєР°Р¶РёС‚Рµ Р¶РµР»Р°РµРјСѓСЋ СЃРёСЃС‚РµРјСѓ РёСЃС‡РёСЃР»РµРЅРёСЏ РґР»СЏ РїРµСЂРµРІРѕРґР°:");
             int nSystem = scanner.nextInt();
-            System.out.println("Десятичное число " + decimalNumber + " равно числу " + toNSystem(nSystem, decimalNumber) + " в " + nSystem + "-ой системе исчисления.");
+            System.out.println("Р”РµСЃСЏС‚РёС‡РЅРѕРµ С‡РёСЃР»Рѕ " + decimalNumber + " СЂР°РІРЅРѕ С‡РёСЃР»Сѓ " + toNSystem(nSystem, decimalNumber) + " РІ " + nSystem + "-РѕР№ СЃРёСЃС‚РµРјРµ РёСЃС‡РёСЃР»РµРЅРёСЏ.");
         }
 
         public static StringBuilder toNSystem(int n,int decimalNumber) {
