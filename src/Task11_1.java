@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class Task11_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Укажите систему исчисления, в которой будет представленно число:");
+        System.out.println("РЈРєР°Р¶РёС‚Рµ СЃРёСЃС‚РµРјСѓ РёСЃС‡РёСЃР»РµРЅРёСЏ, РІ РєРѕС‚РѕСЂРѕР№ Р±СѓРґРµС‚ РїСЂРµРґСЃС‚Р°РІР»РµРЅРЅРѕ С‡РёСЃР»Рѕ:");
         int nSystem = scanner.nextInt();
-        System.out.println("Введите число в " + nSystem + "-ой системе исчисления, разделяя разряды символом _ :");
+        System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РІ " + nSystem + "-РѕР№ СЃРёСЃС‚РµРјРµ РёСЃС‡РёСЃР»РµРЅРёСЏ, СЂР°Р·РґРµР»СЏСЏ СЂР°Р·СЂСЏРґС‹ СЃРёРјРІРѕР»РѕРј _ :");
         String nSystemNumber = scanner.next();
-        System.out.println("Число " + nSystemNumber + " равно числу " + toDecimal(nSystem, nSystemNumber) + " в десятичной системе исчисления.");
+        System.out.println("Р§РёСЃР»Рѕ " + nSystemNumber + " СЂР°РІРЅРѕ С‡РёСЃР»Сѓ " + toDecimal(nSystem, nSystemNumber) + " РІ РґРµСЃСЏС‚РёС‡РЅРѕР№ СЃРёСЃС‚РµРјРµ РёСЃС‡РёСЃР»РµРЅРёСЏ.");
     }
 
     public static int toDecimal(int n, String nSystemNumber) {
